@@ -18,8 +18,8 @@
 ; ------------------------------------------------------------------------
 ; Constants
 
-; $00 : Do not autostart ROM/cartridge, no BASIC.
-; $01 : Autostart immediately using the cartridge cold-start vector.
+; $00 : Do not autostart ROM/cartridge, go to BASIC.
+; $01 : Autostart immediately using the cartridge cold-start vector, BASIC skipped.
 ; $FF : Autostart through BASIC cold-start sequence ($FF commonly used for >$01).
 
 CART_MODE = $FF    ; Autostart flag for cartridge
