@@ -7,6 +7,8 @@ https://github.com/jviskari/cc65cart
 
 The program boots in both 40- and 80-column modes.
 
+![Demo Image](program.png)
+
 ---
 
 ## 🛠️ Building & Running
