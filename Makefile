@@ -52,8 +52,15 @@ $(CARTTYPE)/%.o: $(CARTTYPE)/%.s
 clean:
 	rm -f src/*.o $(CARTTYPE)/*.o $(CARTRIDGE) *.map
 
-# Run in VICE emulator
+# Windows users: uncomment the next line and set the correct path to VICE x128.exe
+# VICE = "C:/WinVICE/x128.exe"
+
+# MacOS/Linux: Run in VICE emulator
 run: $(CARTRIDGE)
 	x128 --cartfrom $(CARTRIDGE)
+
+# Windows users: comment out the above 'run', and uncomment this one
+# run: $(CARTRIDGE)
+# 	$(VICE) --cartfrom $(CARTRIDGE)
 
 .PHONY: all clean run

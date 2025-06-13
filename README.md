@@ -18,6 +18,7 @@ On macOS or Linux, simply run:
 ```sh
 make run
 ```
+Windows users check Makefile comments and the same applies. You need to specify path to WinVice.
 
 This will launch VICE x128 with the correct cartridge image.
 
